@@ -29,13 +29,46 @@ namespace _1912901057_AtakanCetinkaya
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.btnOku = new System.Windows.Forms.Button();
+            this.lstBxHaber = new System.Windows.Forms.ListBox();
+            this.SuspendLayout();
+            // 
+            // btnOku
+            // 
+            this.btnOku.Location = new System.Drawing.Point(1, 327);
+            this.btnOku.Name = "btnOku";
+            this.btnOku.Size = new System.Drawing.Size(119, 44);
+            this.btnOku.TabIndex = 0;
+            this.btnOku.Text = "Oku";
+            this.btnOku.UseVisualStyleBackColor = true;
+            this.btnOku.Click += new System.EventHandler(this.btnOku_Click);
+            // 
+            // lstBxHaber
+            // 
+            this.lstBxHaber.FormattingEnabled = true;
+            this.lstBxHaber.ItemHeight = 15;
+            this.lstBxHaber.Location = new System.Drawing.Point(1, 2);
+            this.lstBxHaber.Name = "lstBxHaber";
+            this.lstBxHaber.Size = new System.Drawing.Size(798, 319);
+            this.lstBxHaber.TabIndex = 1;
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.lstBxHaber);
+            this.Controls.Add(this.btnOku);
+            this.Name = "Form1";
             this.Text = "Form1";
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private System.Windows.Forms.Button btnOku;
+        private System.Windows.Forms.ListBox lstBxHaber;
     }
 }
 

@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml;
 
 namespace _1912901057_AtakanCetinkaya
 {
@@ -17,5 +18,17 @@ namespace _1912901057_AtakanCetinkaya
             InitializeComponent();
         }
 
+        private void btnOku_Click(object sender, EventArgs e)
+        {
+            XmlTextReader xmlOku = new XmlTextReader("https://www.hurriyet.com.tr/rss/anasayfa");
+
+            while (xmlOku.Read())
+            {
+                if (xmlOku.Name == "title")
+                {
+                    lstBxHaber.Items.Add(xmlOku.ReadString());
+                }
+            }
+        }
     }
 }

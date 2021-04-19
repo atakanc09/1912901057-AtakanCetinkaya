@@ -31,6 +31,7 @@ namespace _1912901057_AtakanCetinkaya
         {
             this.btnOku = new System.Windows.Forms.Button();
             this.lstBxHaber = new System.Windows.Forms.ListBox();
+            this.btnYazdir = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnOku
@@ -52,11 +53,22 @@ namespace _1912901057_AtakanCetinkaya
             this.lstBxHaber.Size = new System.Drawing.Size(798, 319);
             this.lstBxHaber.TabIndex = 1;
             // 
+            // btnYazdir
+            // 
+            this.btnYazdir.Location = new System.Drawing.Point(180, 327);
+            this.btnYazdir.Name = "btnYazdir";
+            this.btnYazdir.Size = new System.Drawing.Size(118, 44);
+            this.btnYazdir.TabIndex = 2;
+            this.btnYazdir.Text = "Yazdır";
+            this.btnYazdir.UseVisualStyleBackColor = true;
+            this.btnYazdir.Click += new System.EventHandler(this.btnYazdir_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnYazdir);
             this.Controls.Add(this.lstBxHaber);
             this.Controls.Add(this.btnOku);
             this.Name = "Form1";
@@ -69,6 +81,7 @@ namespace _1912901057_AtakanCetinkaya
 
         private System.Windows.Forms.Button btnOku;
         private System.Windows.Forms.ListBox lstBxHaber;
+        private System.Windows.Forms.Button btnYazdir;
     }
 }
 

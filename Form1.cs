@@ -42,8 +42,7 @@ namespace _1912901057_AtakanCetinkaya
 
             }
 
-       
-           
+     
         }
 
         private void btnYaz_Click(object sender, EventArgs e)
